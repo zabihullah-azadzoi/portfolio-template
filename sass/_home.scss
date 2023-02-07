@@ -1,0 +1,11 @@
+.home {
+  background-image: url("../img/test.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: sticky;
+  z-index: -100;
+  top: 0;
+}

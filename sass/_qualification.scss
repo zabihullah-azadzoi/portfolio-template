@@ -1,0 +1,54 @@
+.qualification {
+  width: 100%;
+  padding: 4rem 2vw;
+  padding-left: 7vw;
+  background-color: #8ee4af;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  &-item {
+    width: 45%;
+    background-color: #5cdb95;
+    padding: 2rem;
+    margin: 2rem;
+    position: relative;
+    z-index: 1;
+    cursor: default;
+
+    @media screen and (max-width: 37.5em) {
+      width: 90%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      bottom: 0%;
+      left: 50%;
+      z-index: -1;
+      width: 0%;
+      display: inline-block;
+      background-color: #379683;
+      transition: all 0.5s ease;
+    }
+    &:hover::before {
+      width: 100%;
+      left: 0%;
+    }
+  }
+  &-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+  &-title {
+    font-size: 3.3rem;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  &-paragraph {
+    font-size: 1.8rem;
+  }
+}

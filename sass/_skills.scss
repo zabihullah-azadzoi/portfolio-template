@@ -1,0 +1,78 @@
+.skills {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem 1vw;
+  padding-left: 6vw;
+  background-color: #5cdb95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 37.5em) {
+    flex-direction: column;
+    padding-left: 8vw;
+  }
+
+  &-container {
+    width: 45%;
+
+    @media screen and (max-width: 37.5em) {
+      width: 90%;
+    }
+  }
+  .design-skills {
+  }
+  .coding-skills {
+    margin-left: 2rem;
+  }
+  &-name {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+  }
+  .skill-container {
+    margin-bottom: 2rem;
+  }
+  .skill-container-label {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #05368b;
+    text-transform: uppercase;
+  }
+  .total-width {
+    width: 90%;
+    height: 2.4rem;
+    border-radius: 1rem;
+    background-color: #1a5758;
+
+    .required-width {
+      height: 100%;
+      background-color: rgb(34, 146, 20);
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+    .element-1 {
+      animation: element-1 infinite 4s cubic-bezier(1, 0, 0, 1);
+    }
+    .element-2 {
+      animation: element-2 infinite 4s cubic-bezier(1, 0, 0, 1);
+    }
+    .element-3 {
+      animation: element-3 infinite 4s cubic-bezier(1, 0, 0, 1);
+    }
+    .element-4 {
+      animation: element-4 infinite 4s cubic-bezier(1, 0, 0, 1);
+    }
+    .element-5 {
+      animation: element-5 infinite 4s cubic-bezier(1, 0, 0, 1);
+    }
+    .element-6 {
+      animation: element-6 infinite 4s cubic-bezier(1, 0, 0, 1);
+    }
+    .element-7 {
+      animation: element-7 infinite 4s cubic-bezier(1, 0, 0, 1);
+    }
+    .element-8 {
+      animation: element-8 infinite 4s cubic-bezier(1, 0, 0, 1);
+    }
+  }
+}

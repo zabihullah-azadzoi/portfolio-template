@@ -1,0 +1,47 @@
+.projects {
+  width: 100%;
+  background-color: #5cdb95;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 2vw;
+  padding-left: 7vw;
+  &-item {
+    height: 38rem;
+    width: 35rem;
+    margin: 2.5rem;
+    cursor: pointer;
+
+    @media screen and (max-width: 75em) {
+      width: 30rem;
+    }
+    @media screen and (max-width: 56.25em) {
+      width: 40rem;
+      height: 45rem;
+    }
+    @media screen and (max-width: 37.5em) {
+      width: 70vw;
+      height: 80vw;
+    }
+    clip-path: polygon(
+      15% 0%,
+      85% 0%,
+      100% 15%,
+      100% 85%,
+      85% 100%,
+      15% 100%,
+      0% 85%,
+      0% 15%
+    );
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+      object-position: top;
+      transition: all 0.5s ease;
+    }
+    &:hover img {
+      filter: brightness(120%);
+    }
+  }
+}

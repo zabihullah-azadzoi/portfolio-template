@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  //font families
+  $title-font-family: "Architects Daughter", cursive;
+  $text-font-family: "Baloo Tammudu 2", cursive;
+  font-family: $text-font-family;
+
+  @media screen and (max-width: 68.25em) {
+    font-size: 50%;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 75%;
+  }
+}
+
+//responsivness breakpoints
+$bp-largest: 75em; // 1200px
+$bp-large: 68.25em; //1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+
+body {
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  // width: 100vw;
+}
+.container {
+  width: 135.1rem;
+  margin: auto;
+  position: relative;
+
+  @media screen and (max-width: 75em) {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+}
